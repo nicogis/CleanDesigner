@@ -2,7 +2,7 @@
 
 ## Overview
 
-**CleanDesigner** is a .NET 8 utility designed to help developers working with DevExpress XAF/XPO projects. When generating business classes using the XAF XPO wizard, the tool analyzes and cleans up `.Designer.cs` files by comparing them to their corresponding custom class files. Its goal is to identify and optionally remove duplicate properties and unnecessary backing fields that may be introduced during the code generation process.
+**CleanDesigner** is a .NET 8 utility designed to help developers working with DevExpress XAF/XPO projects. When generating business classes using the XAF XPO wizard, the tool analyzes and cleans up `.Designer.cs` files by comparing them to their corresponding custom class files. Its goal is to identify and optionally remove duplicate properties and unnecessary backing fields that may be introduced when resynchronizing the model from the database.
 
 ## Features
 
@@ -27,10 +27,8 @@
 
 ### Example
 
-#### Report designer files (using default prefix 'f')
+#### Report designer files (e.g., 'b')
+```CleanDesigner -path "C:\Your\XAF\Project\BusinessObjects\ORMDataModel1Code" -report -prefix b```
 
-```dotnet run -- -path "C:\Your\XAF\Project\BusinessObjects\ORMDataModel1Code" -report```
-
-#### Clean designer files with a custom backing field prefix (e.g., 'b')
-
-```dotnet run -- -path "C:\Your\XAF\Project\BusinessObjects\ORMDataModel1Code" -prefix b -clean```
+#### Clean designer files with a custom backing field prefix (using default prefix 'f')
+```CleanDesigner -path "C:\Your\XAF\Project\BusinessObjects\ORMDataModel1Code" -clean```
