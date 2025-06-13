@@ -207,7 +207,7 @@ class XpoDesignerCleaner
                 foreach (var variable in field.Declaration.Variables)
                 {
                     string fieldName = variable.Identifier.Text;
-                    
+
                     // Skip fields that do not start with the specified prefix
                     if (!fieldName.StartsWith(PrefixBackField))
                         continue;
