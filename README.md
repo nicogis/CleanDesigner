@@ -1,4 +1,4 @@
-# Clean Designer XAF/XPO
+# Clean Designer XPO DevExpress XAF
 
 ## Overview
 
