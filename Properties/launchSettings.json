@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CleanDesigner": {
+      "commandName": "Project",
+      "commandLineArgs": "-path D:\\ORMDataModel1Code -report -prefix f"
+    }
+  }
+}
