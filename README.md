@@ -2,7 +2,7 @@
 
 ## Overview
 
-**CleanDesigner** is a .NET 8 utility designed to help developers working with DevExpress XAF/XPO projects. When generating business classes using the XAF XPO wizard, the tool analyzes and cleans up `.Designer.cs` files by comparing them to their corresponding custom class files. Its main goal is to identify and optionally remove duplicate properties and unnecessary backing fields that may be introduced during the code generation process.
+**CleanDesigner** is a .NET 8 utility designed to help developers working with DevExpress XAF/XPO projects. When generating business classes using the XAF XPO wizard, the tool analyzes and cleans up `.Designer.cs` files by comparing them to their corresponding custom class files. Its goal is to identify and optionally remove duplicate properties and unnecessary backing fields that may be introduced during the code generation process.
 
 ## Features
 
